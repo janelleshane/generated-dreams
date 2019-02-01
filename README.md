@@ -10,6 +10,8 @@ Inspiration: Big thanks to [Pete Majarich] (https://www.wildestdreams.ai/)
 
 More explanation and highlights: [aiweirdness.com]
 
+Content warnings: everything that people have recorded dreaming
+
 Training command: `th train.lua -input_h5 data/dreams-syll.h5 -input_json data/dreams-syll.json -model_type lstm -num_layers 3 -rnn_size 512 -max_epochs 10 -seq_length 35 -checkpoint_name cv/dreams/checkpoint -checkpoint_every 500 -gpu_backend opencl -gpu 1`
 
 (follows standard syllable preprocessing step explained [here)](https://github.com/learningtitans/torch-rnn/blob/valle-syllables/doc/flags.md#preprocessing)
