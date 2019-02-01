@@ -6,6 +6,8 @@ Neural net used: [torch-rnn by Learning_Titans](https://github.com/learningtitan
 
 Dataset: 19,431 dream summaries from [The Dream Bank] (https://dreams.ucsc.edu/)
 
+Inspiration: Big thanks to [Pete Majarich] (https://www.wildestdreams.ai/)
+
 More explanation and highlights: [aiweirdness.com]
 
 Training command: `th train.lua -input_h5 data/dreams-syll.h5 -input_json data/dreams-syll.json -model_type lstm -num_layers 3 -rnn_size 512 -max_epochs 10 -seq_length 35 -checkpoint_name cv/dreams/checkpoint -checkpoint_every 500 -gpu_backend opencl -gpu 1`
